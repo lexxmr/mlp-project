@@ -1,4 +1,4 @@
-import tensorflow as tf
+﻿import tensorflow as tf
 import data_providers as data_providers
 import numpy as np
 import time
@@ -59,7 +59,7 @@ def hierarchical_attention_layer(inputs, attention_units, batchLength):
     attention_vector = tf.reshape(tf.matmul(tf.reshape(alignments, [batchSize, 1, -1]), outputs), [batchSize, numUnits])
     return attention_vector
     
-    
+//修改代码
 
 numUnits = 64
 numClasses = 2
